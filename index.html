@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/app.js" type="text/javascript" defer></script>
+  <title>Tower Defense</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1 class="title">Coop TD</h1>
+      <div class="nav-right-side is-hidden" id="nav_right_side">
+        <ul>
+          <li class="player-stats" id="cash">&#8377;
+            <span>0</span>
+          </li>
+          <li class="player-stats" id="life">&#128150;
+            <span>0</span>
+          </li>
+          <li class="player-stats" id="wave">&#x1F30A;
+            <span>0</span>
+          </li>
+          <li class="player-stats" id="score">Score
+            <span>0</span>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-left-side is-hidden" id="nav_left_side">
+        <ul>
+          <li class="circle-btn" id="instructions">?</li>
+          <li class="circle-btn" id="play">&#9654;</li>
+          <li class="circle-btn" id="pause">&#8741;</li>
+          <li class="circle-btn" id="fast_forward">&#8608;</li>
+          <li class="circle-btn" id="reset">&#8634;</li>
+        </ul>
+      </div>
+      <span class="timer is-hidden" id="timer">&#9203; 01:32</span>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <!-- <button id="start_btn">start</button> -->
+      <div class="level-wrapper">
+        
+      </div>
+    </section>
+  </main>
+  <footer class="is-hidden" id="tower_buttons">
+    <nav>
+      <ul>
+        <li class="circle-btn tower-btn tower-one" id="tower_1">&#x1F3F9;<span class="tower-cost">$50</span></li>
+        <li class="circle-btn tower-btn tower-two" id="tower_2">&#x1F30C;<span class="tower-cost">$75</span></li>
+        <li class="circle-btn tower-btn tower-three" id="tower_3">&#x1F4AB;<span class="tower-cost">$150</span></li>
+        <li class="circle-btn tower-btn tower-four" id="tower_4">&#x1F4A3;<span class="tower-cost">$300</span></li>
+        <li class="circle-btn tower-btn tower-five" id="tower_5">&#x1F32F;<span class="tower-cost">$500</span></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>
